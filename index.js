@@ -10,4 +10,4 @@ else{
     response = 'All clear'
 }
 console.log(response)
-console.log(process.env)
+console.log(process.argv)
