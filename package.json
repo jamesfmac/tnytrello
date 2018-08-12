@@ -1,0 +1,23 @@
+{
+  "name": "tnytrello",
+  "version": "1.0.0",
+  "description": "lightweight tool for quickly adding items to a trello list from the cmd line",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesfmac/tnytrello.git"
+  },
+  "keywords": [
+    "Trello",
+    "cmd"
+  ],
+  "author": "James McManamey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamesfmac/tnytrello/issues"
+  },
+  "homepage": "https://github.com/jamesfmac/tnytrello#readme"
+}
