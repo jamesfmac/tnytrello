@@ -4,23 +4,20 @@ const program = require('commander');
 
 program
     .version('0.1.0')
+    
     .option('-c --config','configure trello API key')
-    .action(()=>{
-        console.log('options loaded')
-    })
 
 program
-  .command('setup [env]')
-  .description('run setup commands for all envs')
-  .option("-s, --setup_mode [mode]", "Which setup mode to use")
-  .action(function(env, options){
-    var mode = options.setup_mode || "normal";
-    env = env || 'all';
-    console.log('setup for %s env(s) with %s mode', env, mode);
-  });
-
-
-
+    .command('add <title>')
+    .description('add a new idea to your list')
+    .option('-i --important','Add starts to idea title')
+    .action((title, options)=>{
+      var important = " "
+      if(options.important){
+        important = " important "
+      }
+        console.log(`new${important}idea ${title} added`)
+    })
 
 /* parse inputs and pass to commander */
 
